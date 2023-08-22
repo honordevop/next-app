@@ -1,41 +1,40 @@
 import React from "react";
 import Image from "next/image";
+import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="">
-        <div>©2023 OrnoIT. All rights reserved.</div>
-        <div className="">
-          <Image
-            src="/1.png"
-            width={15}
-            height={15}
-            className=""
-            alt="Lama Dev Facebook Account"
-          />
-          <Image
-            src="/2.png"
-            width={15}
-            height={15}
-            className=""
-            alt="Lama Dev"
-          />
-          <Image
-            src="/3.png"
-            width={15}
-            height={15}
-            className=""
-            alt="Lama Dev"
-          />
-          <Image
-            src="/4.png"
-            width={15}
-            height={15}
-            className=""
-            alt="Lama Dev"
-          />
-        </div>
+    <div className={styles.container}>
+      <div>©2023 OrnoIT. All rights reserved.</div>
+      <div className={styles.social}>
+        <Image
+          src="/1.png"
+          width={15}
+          height={15}
+          className={styles.icon}
+          alt="ornorit socials Facebook Account"
+        />
+        <Image
+          src="/2.png"
+          width={15}
+          height={15}
+          className={styles.icon}
+          alt="ornorit socials"
+        />
+        <Image
+          src="/3.png"
+          width={15}
+          height={15}
+          className={styles.icon}
+          alt="ornorit socials"
+        />
+        <Image
+          src="/4.png"
+          width={15}
+          height={15}
+          className={styles.icon}
+          alt="ornorit socials"
+        />
       </div>
     </div>
   );
